@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Slick Slider + Youtube + Vimeo</title>
+
+       
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!-- Webhosting Icons http://www.webhostinghub.com/glyphs/ -->
+        <link rel="stylesheet" type="text/css" href="css/fonts/whhg/css/whhg.css" />
+
+
+        <!-- Slick slider http://kenwheeler.github.io/slick/ -->
+        <link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+    </head>
+
+    <body>
+
+        <h1>Responsive Slick Slider Carousel</h1>
+        <h2>It plays Youtube and Vimeo embeded videos, as well as redirect to external pages</h2>
+
+
+
+      	<div id="youtube-video-container" class="video-container">
+            <span class="close-video icon-remove"></span>
+            <div id="youtubePlayer"></div>
+        </div>
+        <div id="vimeo-video-container" class="video-container">
+            <span class="close-video icon-remove"></span>
+            <div id="vimeoPlayer"></div>
+        </div>
+        <section class="wrapper sliderx hide-slider">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 carousel-featured-slider">
+                        <div class="center slider">
+                            <div class="item">
+                                <div class="video video__placeholder">
+                                    <img src="http://placehold.it/1920x930" data-video="https://www.youtube.com/watch?v=fregObNcHC8" title="Play Video" />
+                                    <div class="caption">
+                                        <p>Youtube video when clicking on caption</p>
+                                    </div>
+                                    <button class="video__button"><span class="icon-play-circle playme"></span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="video video__placeholder">
+                                    <img src="http://placehold.it/1920x930" data-video="https://vimeo.com/210735368" title="Play Video" />
+                                    <div class="caption">
+                                        <p>Vimeo video when clicking on caption</p>
+                                    </div>
+                                    <button class="video__button"><span class="icon-play-circle playme"></span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="https://github.com/javco">
+                                    <img src="http://placehold.it/1920x930" title="Play Video" />
+                                    <div class="caption">
+                                        <p>Link redirection when clicking on caption</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="arrows">
+                            <div class="left-edge">
+                                <span class="prev-slide icon-chevron-left"></span>
+                            </div>
+                            <div class="right-edge">
+                                <span class="next-slide icon-chevron-right"></span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <!-- Slick slider http://kenwheeler.github.io/slick/ -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/markup/plugins/slick-1.6.0/slick/slick.min.js"></script>
+        
+
+    </body>
+</html>
+
+
+<script src="js/carousel.js"></script>
