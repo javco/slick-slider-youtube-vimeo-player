@@ -92,7 +92,7 @@ function runSlider(){
     $(document).ready(function() {
 
         //carousel init
-        var sliderContainer = $('.sliderx');
+        var sliderContainer = $('.slider-wrapper');
         sliderContainer.removeClass('hide-slider');
         
         var slider = $(".carousel-featured-slider .slider").slick({
@@ -100,13 +100,13 @@ function runSlider(){
             infinite: true,
             centerMode: false,
             autoplay: true,
-            autoplaySpeed: 1800000,
+            autoplaySpeed: 180000000,
             pauseOnHover: false,    
             centerPadding: '0px',
             slidesToShow: 1,
             variableWidth: false,
-            prevArrow: $('.carousel-featured-slider .left-edge'),
-            nextArrow: $('.carousel-featured-slider .right-edge'),
+            prevArrow: $('.carousel-featured-slider .left-edge .prev-slide'),
+            nextArrow: $('.carousel-featured-slider .right-edge .next-slide'),
         });
 
         //video init
